@@ -1,0 +1,14 @@
+universe = vanilla
+initialdir = .
+#use_x509userproxy = true
+request_memory = 4000
+error  = ./logs/3lepsig_$(Process).err
+log    = ./logs/3lepsig_$(Process).log
+output = ./logs/3lepsig_$(Process).out
+executable = condorsubmit_signal_makemodmini.sh
+transfer_input_files = condorsubmit_signal_makemodmini.sh, JTB_mini_keepconstituents_sig_cfg.py
+arguments = $(Process)
+Notification = never
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+queue xxx
