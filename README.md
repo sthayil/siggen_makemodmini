@@ -15,10 +15,9 @@ scram b -j 4
 ```
 
 Clone this repo:
-```
-git clone git@github.com:sthayil/siggen_makemodmini.git
-```
+```git clone git@github.com:sthayil/siggen_makemodmini.git```
 
+<<<<<<< HEAD
 To run signal samples:
 ```
 source 0930_makeminiaodwithjtbjetconsts.sh #miniAODfiles
