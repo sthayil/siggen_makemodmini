@@ -1,0 +1,14 @@
+universe = vanilla
+initialdir = .
+#use_x509userproxy = true
+request_memory = 4000
+error  = ./logs/bkgd_zzz_xxx.err
+log    = ./logs/bkgd_zzz_xxx.log
+output = ./logs/bkgd_zzz_xxx.out
+executable = condorsubmit_bkgd_makemodmini.sh
+transfer_input_files = condorsubmit_bkgd_makemodmini.sh, JTB_mini_keepconstituents_bkgd_cfg.py
+arguments = xxx yyy zzz
+Notification = never
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+queue 1
